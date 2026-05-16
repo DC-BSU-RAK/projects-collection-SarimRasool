@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_deep">#1A0A2E</color>
+    <color name="purple_mid">#2D1B69</color>
+    <color name="purple_light">#7C3AED</color>
+    <color name="pink_accent">#EC4899</color>
+    <color name="cyan_accent">#06B6D4</color>
+    <color name="yellow_glow">#FCD34D</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="btn_mood1">#4C1D95</color>
+    <color name="btn_mood2">#1E3A5F</color>
+    <color name="btn_mood3">#134E4A</color>
+    <color name="btn_mood4">#7C2D12</color>
+    <color name="btn_operator">#EC4899</color>
+    <color name="btn_calculate">#7C3AED</color>
+</resources>

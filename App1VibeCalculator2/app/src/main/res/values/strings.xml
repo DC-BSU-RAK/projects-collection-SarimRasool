@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Vibe Calculator</string>
+    <string name="btn_chill">😌 Chill</string>
+    <string name="btn_hype">🔥 Hype</string>
+    <string name="btn_sad">😢 Sad</string>
+    <string name="btn_anxious">😰 Anxious</string>
+    <string name="btn_happy">😊 Happy</string>
+    <string name="btn_angry">😤 Angry</string>
+    <string name="btn_bored">😑 Bored</string>
+    <string name="btn_loved">🥰 Loved</string>
+    <string name="btn_stressed">😵 Stressed</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_minus">−</string>
+    <string name="btn_clear">CLR</string>
+    <string name="btn_calculate">VIBE CHECK ✨</string>
+    <string name="display_hint">Add your moods...</string>
+    <string name="info_title">How Vibe Calculator Works</string>
+    <string name="info_body">Welcome to the Vibe Calculator! 🌀\n\nThis is NOT a number calculator. It\'s a mood processor.\n\n1. Tap mood buttons to build your emotional equation\n2. Use + to combine moods or − to cancel them out\n3. Press CLR to start fresh\n4. Hit VIBE CHECK to calculate your overall vibe!\n\nEach mood has a hidden energy score. Your final vibe is calculated from the combination — and you\'ll get a unique vibe result every time.\n\nHave fun exploring your feelings! 💜</string>
+    <string name="info_close">Got it! ✨</string>
+</resources>

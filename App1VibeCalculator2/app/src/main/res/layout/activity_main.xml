@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TOP BAR -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="✨ Vibe Calculator"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_mood_bg"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <!-- DISPLAY BOX -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/display_bg"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:minHeight="80dp">
+
+            <TextView
+                android:id="@+id/tvEquation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/display_hint"
+                android:textColor="#80FFFFFF"
+                android:textSize="16sp"
+                android:hint="Add your moods..."
+                android:ellipsize="end"
+                android:maxLines="2"/>
+        </LinearLayout>
+
+        <!-- RESULT BOX (hidden by default) -->
+        <LinearLayout
+            android:id="@+id/layoutResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/result_bg"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvVibeEmoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="48sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tvVibeResult"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FCD34D"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:id="@+id/tvVibeDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#80FFFFFF"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="4dp"/>
+        </LinearLayout>
+
+        <!-- MOOD GRID - Row 1 -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="3"
+            android:useDefaultMargins="false"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnChill"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_chill"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnHype"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_hype"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnSad"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_sad"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnAnxious"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_anxious"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnHappy"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_happy"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnAngry"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_angry"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnBored"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_bored"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnLoved"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_loved"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+
+            <Button
+                android:id="@+id/btnStressed"
+                android:layout_width="0dp"
+                android:layout_height="64dp"
+                android:layout_columnWeight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_mood_bg"
+                android:text="@string/btn_stressed"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp"/>
+        </GridLayout>
+
+        <!-- OPERATORS ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/btnPlus"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_operator_bg"
+                android:text="@string/btn_plus"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnMinus"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_operator_bg"
+                android:text="@string/btn_minus"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/btn_operator_bg"
+                android:text="@string/btn_clear"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- VIBE CHECK BUTTON -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_calculate_bg"
+            android:text="@string/btn_calculate"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
